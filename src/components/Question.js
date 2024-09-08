@@ -6,16 +6,14 @@ function Question({ question, answer }) {
     const [isActive, setIsActive] = useState(false);
 
     return (
-        <div className='flex-col bg-white w-[500px] border-y-0 border-x-0'>
-            <button onClick={() => setIsActive(!isActive)} className='flex justify-between w-full border-none bg-white'>
-                <h2 className='text-darkPurple font-bold p-0 m-0'>{question}</h2>
+        <div className='flex-col bg-white w-full border-y-0 border-x-0 p-0'>
+            <button onClick={() => setIsActive(!isActive)} className='flex justify-between items-center w-full border-none bg-white p-0 py-5'>
+                <h2 className='text-darkPurple text-xl font-semibold p-0 m-0'>{question}</h2>
                 <img src={isActive ? minusIcon : plusIcon} alt='Plus' />
             </button>
-            {
-                <div className={`overflow-hidden transition-[max-height] duration-500 linear ${isActive ? "max-h-40" : 'max-h-0'}`}>
-                    <p>{answer}</p>
-                </div>
-            }
+            <div className={`overflow-hidden transition-[max-height] duration-500 linear ${isActive ? "max-h-96" : 'max-h-0'}`}>
+                <p className='m-0 pb-5 text-base text-grayishPurple font-normal'>{answer}</p>
+            </div>
         </div>
     )
 }

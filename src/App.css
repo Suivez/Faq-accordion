@@ -1,0 +1,13 @@
+.App {
+  background-image: url('./images/background-pattern-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (min-width: 640px) {
+  .App {
+    background-image: url('./images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
