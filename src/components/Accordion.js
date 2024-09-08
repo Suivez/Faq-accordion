@@ -4,7 +4,7 @@ import starImage from '../images/icon-star.svg';
 
 function Accordion() {
     return (
-        <div className='w-[600px] p-7 bg-white rounded-xl m-10 sm:m-0'>
+        <div className='w-[600px] p-7 bg-white rounded-xl m-5 my-10 sm:m-0 shadow-2xl'>
             <div className='w-full flex gap-5'>
                 <img src={starImage} alt='Star'/>
                 <h1 className='text-6xl font-bold m-0 text-darkPurple'>FAQs</h1>

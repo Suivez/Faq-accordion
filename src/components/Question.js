@@ -7,8 +7,8 @@ function Question({ question, answer }) {
 
     return (
         <div className='flex-col bg-white w-full border-y-0 border-x-0 p-0'>
-            <button onClick={() => setIsActive(!isActive)} className='flex justify-between items-center w-full border-none bg-white p-0 py-5'>
-                <h2 className='text-darkPurple text-xl font-semibold p-0 m-0'>{question}</h2>
+            <button onClick={() => setIsActive(!isActive)} className='group flex justify-between items-center w-full border-none bg-white p-0 py-5 cursor-pointer'>
+                <h2 className='text-darkPurple text-xl font-semibold text-left p-0 m-0 group-hover:text-hoverPink transition linear delay-0'>{question}</h2>
                 <img src={isActive ? minusIcon : plusIcon} alt='Plus' />
             </button>
             <div className={`overflow-hidden transition-[max-height] duration-500 linear ${isActive ? "max-h-96" : 'max-h-0'}`}>

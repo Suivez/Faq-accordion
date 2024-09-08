@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+  background-color: hsl(275, 100%, 97%);
 }
 
 @tailwind components;
